@@ -5,7 +5,7 @@
 
 
 ##  电商后台管理系统(前端项目）  [预览](http://huangzun.top:8888/)
-### 后端API接口源码  [下载](https://gitee.com/wBekvam/vueShop-api-server.git).
+### 后端API接口源码  [下载](https://gitee.com/wBekvam/vueShop-api-server.git).  [接口API](./api接口文档.md)
 
 ### 功能
 
@@ -44,7 +44,7 @@
 
 - Sequelize
 
-  ##### [接口文档](https://gitee.com/wBekvam/vue-shop-admin/raw/master/api%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3.md).
+  ##### [接口API](./api接口文档.md).
 
   后端源码  [下载](https://gitee.com/wBekvam/vueShop-api-server.git).
 
