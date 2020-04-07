@@ -5,6 +5,7 @@
 
 
 ##  电商后台管理系统(前端项目）  [预览](http://huangzun.top:8888/)
+### 后端API接口源码  [下载](https://gitee.com/wBekvam/vueShop-api-server.git).
 
 ### 功能
 
