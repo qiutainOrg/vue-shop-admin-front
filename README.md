@@ -274,34 +274,43 @@ axios.interceptors.request.use(config => {
   2. 步骤2
 
   > 在public/index.html文件头部,将main-prod中的已经进行配置的import(<code>样式表</code>)删除替换为cdn引入
-  >
-  > <link href="https://cdn.bootcss.com/viewerjs/1.3.7/viewer.min.css" rel="stylesheet">
-  >
-  > ​    <link href="https://cdn.bootcss.com/quill/2.0.0-dev.3/quill.bubble.min.css" rel="stylesheet">
-  >
-  > ​    <link href="https://cdn.bootcss.com/quill/2.0.0-dev.3/quill.core.min.css" rel="stylesheet">
-  >
-  > ​    <link href="https://cdn.bootcss.com/quill/2.0.0-dev.3/quill.snow.min.css" rel="stylesheet">
-  >
-  > ​    <link href="https://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
-  >
-  > ​    <link href="https://cdn.bootcss.com/element-ui/2.12.0/theme-chalk/index.css" rel="stylesheet">
+```css
+<link href="https://cdn.bootcss.com/viewerjs/1.3.7/viewer.min.css" rel="stylesheet">
 
+<link href="https://cdn.bootcss.com/quill/2.0.0-dev.3/quill.bubble.min.css" rel="stylesheet">
+
+​<link href="https://cdn.bootcss.com/quill/2.0.0-dev.3/quill.core.min.css" rel="stylesheet">
+
+<link href="https://cdn.bootcss.com/quill/2.0.0-dev.3/quill.snow.min.css" rel="stylesheet">
+
+<link href="https://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+
+<link href="https://cdn.bootcss.com/element-ui/2.12.0/theme-chalk/index.css" rel="stylesheet">
+```
   3. 步骤3
 
   > 在public/index.html文件头部,将main-prod中的已经进行配置的import(<code>js文件</code>)删除替换为cdn引入
-  >
-  > <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
-  > <script src="https://cdn.bootcss.com/vue-router/3.1.3/vue-router.min.js"></script>
-  > <script src="https://cdn.bootcss.com/axios/0.19.0/axios.min.js"></script>
-  > <script src="https://cdn.bootcss.com/lodash.js/4.17.15/lodash.min.js"></script>
-  > <script src="https://cdn.bootcss.com/echarts/4.4.0-rc.1/echarts.min.js"></script>
-  > <script src="https://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
-  > <script src="https://cdn.bootcss.com/quill/2.0.0-dev.3/quill.min.js"></script>
-  > <script src="https://cdn.jsdelivr.net/npm/vue-quill-editor@3.0.4/dist/vue-quill-editor.js"></script>
-  > <script src="https://cdn.bootcss.com/viewerjs/1.3.7/viewer.min.js"></script>
-  > <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
+```css
+ <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+ 
+ <script src="https://cdn.bootcss.com/vue-router/3.1.3/vue-router.min.js"></script>
 
+<script src="https://cdn.bootcss.com/axios/0.19.0/axios.min.js"></script>
+
+<script src="https://cdn.bootcss.com/lodash.js/4.17.15/lodash.min.js"></script>
+
+<script src="https://cdn.bootcss.com/echarts/4.4.0-rc.1/echarts.min.js"></script>
+
+<script src="https://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+<script src="https://cdn.bootcss.com/quill/2.0.0-dev.3/quill.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue-quill-editor@3.0.4/dist/vue-quill-editor.js"></script>
+
+<script src="https://cdn.bootcss.com/viewerjs/1.3.7/viewer.min.js"></script>
+
+<script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
+```
   4. cdn加速前后对比( **chunk-vendors**打包文件)
 
   > Parsed大小 2.6m=> **596.9kB**
@@ -313,9 +322,9 @@ axios.interceptors.request.use(config => {
     > 1. 在main-prod.js中,注释掉element-ui按需加载的代码
     > 2. 在index.html头部区域中,通过cdn加载element-ui的js和css样式
     >
-    > <link href="https://cdn.bootcss.com/element-ui/2.12.0/theme-chalk/index.css" rel="stylesheet">
+    >	        `<link href="https://cdn.bootcss.com/element-ui/2.12.0/theme-chalk/index.css" rel="stylesheet">`
     >
-    > <script src="https://cdn.bootcss.com/element-ui/2.12.0/index.js"></script>
+    > 	        `<script src="https://cdn.bootcss.com/element-ui/2.12.0/index.js"></script>`
 
 - 首页内容定制
 
