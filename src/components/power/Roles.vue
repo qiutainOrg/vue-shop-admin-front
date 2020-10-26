@@ -220,9 +220,9 @@ export default {
       if (res.meta.status !== 200) {
         return this.$message.error('删除权限失败！')
       }
-      this.rolesList = res.data
+      role.children = res.data
       //   不建议使用
-      this.getRolesList()
+      // this.getRolesList()
     },
     // 分配权限
     async showSetRightDialog (role) {
@@ -250,7 +250,7 @@ export default {
     },
     // 权限对话框关闭事件
     setRightDialogClosed () {
-      this.rightsList = []
+      this.defKeys = []
     },
     // 添加角色对话框的关闭
     addRoleDialogClosed () {
